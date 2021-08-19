@@ -113,7 +113,7 @@ int main(int argc, char **argv) {
   // We are about to create the "fib" function:
   Function *FibF = CreateFibFunction(M, Context);
 
-  // Now we going to create JIT
+  // Now we going to create JIT Compiler
   std::string errStr;
   ExecutionEngine *EE =
     EngineBuilder(std::move(Owner))
